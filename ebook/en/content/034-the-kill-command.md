@@ -12,6 +12,15 @@ Signals can be specified in three ways:
 -   **Without SIG prefix (e.g. -kill)**
   
 
+### Syntax
+
+
+
+```
+kill [OPTIONS] [PID]...
+```
+
+
 ###  Examples:
 
   
