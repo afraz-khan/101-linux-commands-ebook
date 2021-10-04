@@ -6,6 +6,10 @@
 
 `kill` command in Linux (located in /bin/kill), is a built-in command which is used to terminate processes manually. _kill_ command sends a signal to a process which terminates the process. If the user doesn’t specify any signal which is to be sent along with kill command then default _TERM_ signal is sent that terminates the process.
 
+Signals can be specified in three ways:
+-   **By number (e.g. -5)**
+-   **With SIG prefix (e.g. -SIGkill)**
+-   **Without SIG prefix (e.g. -kill)**
   
 
 ###  Examples:
@@ -19,10 +23,6 @@
 ```
 kill -l
 ```
-Signals can be specified in three ways:
--   **By number (e.g. -5)**
--   **With SIG prefix (e.g. -SIGkill)**
--   **Without SIG prefix (e.g. -kill)**
 
   
 
@@ -40,18 +40,19 @@ kill {-signal | -s signal} pid
   
 
 4. Specify Signal:
+	
 	- using numbers as signals 
-		```
-		kill -9 pid
-		```
+	```
+	kill -9 pid
+	```
 	- using SIG prefix in signals
-		```
-		kill -SIGHUP pid
-		```
+	```
+	kill -SIGHUP pid
+	```
 	- without SIG prefix in signals
-		```
-		kill -HUP pid
-		```
+	```
+	kill -HUP pid
+	```
 
 
 ###  Arguments:
