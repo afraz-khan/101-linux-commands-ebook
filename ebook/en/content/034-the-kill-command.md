@@ -50,18 +50,18 @@ kill {-signal | -s signal} pid
 
 4. Specify Signal:
 	
-	- using numbers as signals 
-	```
-	kill -9 pid
-	```
-	- using SIG prefix in signals
-	```
-	kill -SIGHUP pid
-	```
-	- without SIG prefix in signals
-	```
-	kill -HUP pid
-	```
+- using numbers as signals 
+```
+kill -9 pid
+```
+- using SIG prefix in signals
+```
+kill -SIGHUP pid
+```
+- without SIG prefix in signals
+```
+kill -HUP pid
+```
 
 
 ###  Arguments:
